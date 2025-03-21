@@ -1,5 +1,5 @@
 def filter_by_state(bank_transaction: list[dict], state: str = "EXECUTED") -> list:
-    """Функция возврата банковских операций по ключу"""
+    """Функция возврата словарей банковских операций по ключу"""
     state_bank_transaction = []
     for item in bank_transaction:
         if item["state"] == state:
